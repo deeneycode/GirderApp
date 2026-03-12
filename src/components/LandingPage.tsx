@@ -1,4 +1,4 @@
-import { Activity, ArrowRight, Layers, Maximize, ShieldCheck, FileBarChart } from 'lucide-react';
+import { Activity, ArrowRight} from 'lucide-react';
 
 export function LandingPage({ onStart }: { onStart: () => void }) {
   return (
