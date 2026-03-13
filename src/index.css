@@ -280,3 +280,129 @@ button.btn-primary.btn-large {
 ::-webkit-scrollbar-track { background: #f5f5f5; }
 ::-webkit-scrollbar-thumb { background: #d0d0d0; border-radius: 4px; }
 ::-webkit-scrollbar-thumb:hover { background: #b0b0b0; }
+
+
+/* ===== TABLET BREAKPOINT (768px) ===== */
+@media (min-width: 768px) {
+  .landing-main {
+    padding: 3rem 2rem;
+  }
+  .hero-title {
+    font-size: 2.75rem;
+  }
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  .feature-card {
+    padding: 1.75rem;
+  }
+  .feature-card h3 {
+    font-size: 1.2rem;
+  }
+  .app-container {
+    flex-direction: row;
+  }
+  .sidebar {
+    width: 300px;
+    border-bottom: none;
+    border-right: 1px solid #e0e0e0;
+    padding: 1.5rem;
+  }
+  .main-content {
+    padding: 2rem;
+    gap: 2rem;
+  }
+  .section {
+    padding: 1.5rem;
+  }
+  .grid-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+ 
+/* ===== DESKTOP BREAKPOINT (1024px) ===== */
+@media (min-width: 1024px) {
+  .landing-main {
+    padding: 4rem 2rem;
+  }
+  .hero-section {
+    margin-bottom: 4rem;
+  }
+  .hero-title {
+    font-size: 3.5rem;
+  }
+  .hero-subtitle {
+    font-size: 1.25rem;
+  }
+  .features-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  .feature-card {
+    padding: 2rem;
+  }
+  .feature-card h3 {
+    font-size: 1.25rem;
+  }
+  .sidebar {
+    width: 380px;
+    padding: 2rem;
+  }
+  .main-content {
+    padding: 2.5rem;
+    gap: 2rem;
+  }
+  .section {
+    padding: 1.75rem;
+  }
+  .card {
+    padding: 1.5rem;
+  }
+}
+ 
+/* ===== LARGE DESKTOP (1440px+) ===== */
+@media (min-width: 1440px) {
+  .landing-container,
+  .app-container {
+    margin: 0 auto;
+  }
+  .main-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+ 
+/* ===== ACCESSIBILITY & TOUCH ===== */
+@media (max-height: 500px) {
+  .hero-title {
+    font-size: 1.75rem;
+  }
+  .landing-main {
+    padding: 1rem;
+  }
+}
+ 
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+ 
+/* High DPI screens */
+@media (min-resolution: 2dppx) {
+  button {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  .card {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  }
+}
+ 
